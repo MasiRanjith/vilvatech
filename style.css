@@ -1,0 +1,504 @@
+/* Default code starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    border: 1px;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8f2f4;
+    font-family: "Titillium Web", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: smooth;
+    scroll-padding-top: 0rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family:"Titillium Web", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Titillium Web", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+}
+
+.align {
+    max-width: 1900px;
+    margin: auto;
+    padding: 0 3rem;
+}
+.align1 {
+    /* background-color: #ff0f00; */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+
+}
+
+.componentSpacing {
+    padding: 10rem 0;
+}
+.componentSpacing1 {
+    padding: 2rem 0;
+}
+
+.miniPad {
+    padding: 1rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex1 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* :::PARENT CONTAINER Code Starts here::: */
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(248,248,248);
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+/* :::HEADER Code Starts here::: */
+/* Navbar code */
+.navLogo img {
+    /* aspect-ratio:auto ; */
+    width: 80%;
+    margin-right: 3rem;
+
+}
+
+.navLogo {
+    padding: 1.4rem 1rem;
+    /* justify-content: center; */
+}
+
+.navBody {
+    display: grid;
+
+}
+
+.navLink {
+    display: flex;
+    justify-content: space-around;
+    /* width: 70%; */
+    align-items: center;
+
+}
+
+.navLink li {
+    display: flex;
+    list-style: none;
+    /* justify-content: space-around; */
+
+}
+
+.navLink a {
+    display: flex;
+    font-size: 1.7rem;
+    text-decoration: none;
+
+}
+
+.contactNumber i {
+    font-size: 2rem;
+    /* margin-right: 0.4rem; */
+
+}
+
+.contactNumber p {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: rgb(20, 79, 160);
+}
+
+.socialIcon {
+    /* justify-content: space-around; */
+    gap: 1rem;
+
+
+}
+
+.icon1 {
+    font-size: 1.3rem;
+    /* color: rgb(37,211,102); */
+    /* margin-right: 1rem;  */
+    /* border-radius: 50%; */
+    background-color: rgb(37, 211, 102);
+    ;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 75%;
+
+
+}
+
+.icon2 {
+    font-size: 2rem;
+    background-color: rgb(59, 89, 152);
+    /* margin-right: 1rem; */
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.icon3 {
+    font-size: 2rem;
+    background-color: rgb(40, 40, 40);
+    /* margin-right: 1rem; */
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.icon4 {
+    font-size: 2rem;
+    background-color: rgb(0, 119, 181);
+    /* margin-right: 1rem; */
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.icon5 {
+    background-color: rgb(205, 32, 31);
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5 {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.icon1 i,
+.icon2 i,
+.icon3 i,
+.icon4 i,
+.icon5 i {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Navbar code */
+
+/* Hero Section code */
+.heroSectionContainer {
+    /* background-color: #ff0f00; */
+}
+
+.heroSection {
+    /* background-color: #8800ff; */
+}
+
+.heroBody {
+    background-color: #e0e0e0;
+    background-image: url(./assests/image/controlling-light-bulb-with-mobile-device.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 90%; */
+    padding: 7rem 0 1rem;
+
+}
+.project1 {
+    /* align-items: center; */
+    
+    /* background-color: #ffffff; */
+    /* align-items:center ; */
+    padding-left: 30rem;
+    
+}
+.project1  h1 {
+   font-size: 5.5rem;
+   color: rgb(20,79,160);
+   
+   
+}
+.project1  p {
+    font-size: 1.8rem;
+    
+ }
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+/* :::MAIN Code Starts here::: */
+ .vilvaContent p{
+    font-size: 1.9rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    line-height: 29px;
+    
+   
+ }
+ .vilvaContent {
+    /* display: flex; */
+    text-align: center;
+    
+    
+ }
+ .allContent  {
+    text-align: center;
+    gap: 1.5rem;
+ }
+.allContent button {
+    background-color:rgb(20,79,160);
+    padding: 1rem 1.5rem;
+    
+    
+    
+}
+.allContent a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    
+    
+}
+.vilvaCard {
+    /* gap: 2rem; */
+    padding: 0.5rem 0.5rem;
+    gap: 2rem;
+    /* border-radius: 10px; */
+    /* background-color: #ff0f00; */
+    
+}
+.vilvaCardImage img{
+    border-radius:20px 20px 0 0;
+    /* z-index: -1; */
+}
+.vilvaContent {
+    padding: 3rem 1.5rem;
+    /* background-color:rgb(230,240,255); */
+    border-radius: 0 0 20px 20px;
+   
+}
+ 
+
+/* :::MAIN Code Ends here::: */
+
+/* :::FOOTER Code Starts here::: */
+/* Contact code */
+.contactBody1{
+    /* background-color: rgb(209, 24, 24); */
+}
+.contact{
+    /* background-color: rgb(209, 24, 24); */
+}
+.vilvaLogo img {
+    width: 70%;
+    height: auto;
+    /* margin-right: 3rem; */
+
+
+}
+.vilvaLogo p {
+    font-size: 1.4rem;
+    padding: 2rem 0;
+}
+.vilvaLogo iframe{
+    width: 85%;
+    height: 25%;
+}
+.phone1 h3 {
+    font-size: 1.6rem;
+}
+.phone1 p {
+    font-size: 1.5rem;
+}
+.phone1 h2 {
+    font-size: 2.5rem;
+} 
+.phone10 {
+    /* display: flex;justify-content: none; */
+}
+.icon  i{
+font-size: 3rem;
+margin-right: 2rem;
+}
+.phone1 li {
+    list-style: none;
+}
+.phone1 a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.email h3 {
+    font-size: 1.6rem;
+}
+.email p {
+    font-size:1.3rem;
+}
+.email.time p{
+    /* font-size: 6rem; */
+}
+.email h2 {
+    font-size: 2.5rem;
+}
+.headquater h3 {
+ font-size: 1.6rem;
+}
+.headquater p {
+    font-size: 1.5rem;
+}
+.ourBranches h2 {
+    font-size: 2rem;
+}
+.vilvaBody1 {
+    padding: 5rem 0;
+}
+.quickLinks1 li {
+    list-style: none;
+    padding: 0.5rem 0;
+
+}
+.quickLinks1 h2 {
+    font-size: 2.2rem;
+    padding: 1.3rem 0;
+}
+.quickLinks1 a {
+    text-decoration: none;
+    font-size: 1.3rem;
+   
+}
+.opening h2 {
+    font-size: 2.2rem;
+    padding: 1.3rem 0;
+}
+.opening p {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+}
+.ourBranches h2 {
+    font-size: 2.2rem;
+    padding: 1.3rem 0;
+}
+.ourBranches p {
+    font-size: 1.3rem;
+}
+/* Contact code */
+.copyrightscontent {
+    text-align: center;
+}
+.copyrightscontent p {
+    font-size: 1.4rem;
+    padding: 3rem 0;
+}
+.copyrights {
+    background-color: rgb(234,234,234);
+}
+/* Contact Icons code */
+/* Contact Icons code */
+/* :::FOOTER Code Ends here::: */
+
+/* :::: RESPONSIVE DESIGN DEVICE SIZES :::: */
+
+/* for Responsive Target the ROW Code (disply:grid) */
